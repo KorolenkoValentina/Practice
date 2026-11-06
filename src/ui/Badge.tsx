@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-
+import '@/assets/styles/Badge.css';
 interface BadgeProps{
     children: ReactNode;
     tone?:'neutral'|'primary'|'success'|'warning'|'error';

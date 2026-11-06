@@ -1,4 +1,4 @@
-﻿import type { Course, CourseDraft } from "../types/course";
+import type { Course, CourseDraft } from "@/types/course";
 export const courses: Course[] = [
     {
         id: 'js',

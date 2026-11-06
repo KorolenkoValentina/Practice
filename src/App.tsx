@@ -1,7 +1,7 @@
-﻿import { useState } from "react";
-import type { Course, CourseDraft } from "./types/course";
-import { CourseList } from "./components/CourseList";
-import { courses as initialCourses, emptyDraft } from "./data/courses";
+import { useState } from "react";
+import type { Course, CourseDraft } from "@/types/course";
+import { CourseList } from "@/components/CourseList";
+import { courses as initialCourses, emptyDraft } from "@/data/courses";
 
 
 export default function App() {

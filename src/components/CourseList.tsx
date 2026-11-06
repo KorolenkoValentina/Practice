@@ -1,5 +1,5 @@
-﻿import type { Course } from "../types/course";
-import { CourseCard } from "./CourseCard";
+import type { Course } from "@/types/course";
+import { CourseCard } from "@/components/CourseCard";
 
 interface CourseListProps{
     courses: readonly Course[];

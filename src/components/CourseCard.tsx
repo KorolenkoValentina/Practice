@@ -1,8 +1,8 @@
-﻿import { useState } from "react";
-import type { CourseCardProps, CourseDraft } from "../types/course";  
-import { emptyDraft, priceFormatter } from "../data/courses";
-import { Badge } from "../ui/Badge";
-import { Card } from "../ui/Card";
+
+import type { CourseCardProps } from "@/types/course";
+import { priceFormatter } from "@/data/courses";
+import { Badge } from "@/ui/Badge";
+import { Card } from "@/ui/Card";
 
 
 const levelLabels={
