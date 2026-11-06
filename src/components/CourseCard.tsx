@@ -12,7 +12,7 @@ const levelLabels={
 };
 
 
- export function CourseCard({ course, onToggle, onDelete }: CourseCardProps){
+ export function CourseCard({ course, onToggle, onDelete , onToggleFavorite}: CourseCardProps){
 
     const isFree= course.price===0;
     const priceLabel= isFree ? 'Безкоштовно' : priceFormatter.format(course.price);
@@ -32,11 +32,17 @@ const levelLabels={
             <strong className="course-card__price">{priceLabel}</strong>
         </div>
         <div className="course-card__actions">
+          <button 
+            type="button"
+            aria-pressed={course.isFavorite}
+            onClick={()=>onToggleFavorite(course.id)}>{course.isFavorite ? 'Прибрати з обраного' : 'Додати в обране'}</button>
             <button 
             type="button"
             aria-pressed={course.isPublished}
-            onClick={()=>onToggle(course.id)}>{course.isPublished ? 'Приховати' : 'Опублікувати'}</button>
+            onClick={()=>onToggle(course.id)}>{course.isPublished ? 'Приховати' : 'Опублікувати'}
+            </button>
             <button     type="button"  onClick={()=>onDelete(course.id)}>Видалити</button>
+          
         </div>
     </Card>
   )
