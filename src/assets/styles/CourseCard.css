@@ -1,0 +1,38 @@
+.course-card__badges {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+.course-card__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin:0;
+    color: brown;
+}
+.course-card__teacher {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+.course-card__description {
+    font-size: 14px;
+    color: #555;
+  
+}
+.course-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 24px;
+    gap:16px
+}
+.course-card__lessons {
+    font-size: 14px;
+    color: #555;
+}
+.course-card__price {
+
+    color: #000;
+}
